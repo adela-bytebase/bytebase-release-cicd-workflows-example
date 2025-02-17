@@ -1,0 +1,3 @@
+DROP TABLE tbl1;
+
+CREATE TABLE tbl2(id INT);
