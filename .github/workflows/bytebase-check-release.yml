@@ -28,7 +28,7 @@ jobs:
         with:
           bytebase-url: ${{ env.BYTEBASE_URL }}
           service-key: ${{ env.BYTEBASE_SERVICE_ACCOUNT }}
-          service-secret: "bbs_iqysPHMqhNpG4rQ5SFEJ" # Please use secrets for sensitive data in production.
+          service-secret:  ${{ secrets.BYTEBASE_PASSWORD }}
       - name: SQL review
         id: sql_review
         uses: bytebase/create-release-action@v1
