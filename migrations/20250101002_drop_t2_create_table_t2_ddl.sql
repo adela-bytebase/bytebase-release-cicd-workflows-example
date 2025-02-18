@@ -1,4 +1,5 @@
-   DROP TABLE t1;
-   CREATE TABLE t2 (
-     id INT
-   );
+ALTER TABLE t1 RENAME TO "t1_del";
+
+DROP TABLE "t1_del";
+
+CREATE TABLE t2(id INT PRIMARY KEY NOT NULL);
